@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del 21</title>
+    <link rel="stylesheet" media="all" href="styles.css" />
+</head>
+<body>
+    <h1> Juego del 21🃏</h1>
+    <a href="#" class="cta" id="startButton" onclick="juego.iniciar()">
+        <span>▶️ Empezar</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+    </a>
+    <a href="#" class="cta" id="playerButton" onclick="juego.agregarCartaJugador()">
+        <span>🧑 Jugador</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+    </a>
+    <a href="#" class="cta" id="machineButton" onclick="juego.jugarMaquina()">
+        <span>💻 Máquina</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+    </a>
+    <div class="sum-container">
+        <p class="sum-label">Suma del Jugador:</p>
+        <p class="sum" id="playerSum">0</p>
+    </div>
+    <div class="sum-container">
+        <p class="sum-label">Suma de la Máquina:</p>
+        <p class="sum" id="machineSum">0</p>
+    </div>
+    <p id="result"></p>
+    <p id="playerCards"></p>
+    <p id="machineCards"></p>
+
+    <script src="juego.js"></script>
+</body>
+</html>
